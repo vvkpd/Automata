@@ -4,7 +4,7 @@ const DFA = require(path.resolve('src/dfa.js'));
 const testCases = require(path.resolve('test/testCases.js'));
 
 describe('DFA Test', () => {
-    const dfaTestCases = testCases.filter(a => a.type == 'dfa');
+    const dfaTestCases = testCases.filter(testcase => testcase.type == 'dfa');
 
     it('run all DFA test', () => {
         dfaTestCases.forEach(testCase => {
